@@ -20,7 +20,7 @@
 ### Server-side
 ``` bash
 # cloning project
-$git clone https://github.com/builderapps/laravel-nuxtjs.git
+$ git clone https://github.com/builderapps/laravel-nuxtjs.git
 
 # install dependencies
 $ composer install
