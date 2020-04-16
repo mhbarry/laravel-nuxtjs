@@ -1,4 +1,4 @@
-const options = JSON.parse(`<%= JSON.stringify(options) %>`)
+const options = <%= JSON.stringify(options, null, 2) %>
 const env = options.env
 window.env = env
 export default function (context, inject) {
