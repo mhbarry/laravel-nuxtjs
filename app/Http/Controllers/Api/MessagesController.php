@@ -20,6 +20,7 @@ class MessagesController extends Controller
            'message' => $request->message,
            'user_id' => auth()->id()
         ]);
+         $item = Message::with('user')->findOrFail($item->id);
         broadcast(new NewMessageEvent($item));
         DB::commit();
 
